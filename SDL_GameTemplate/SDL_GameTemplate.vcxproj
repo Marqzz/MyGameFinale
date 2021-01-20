@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FBBD6837-CB29-4663-9FEF-227009B44838}</ProjectGuid>
+    <RootNamespace>SDLGameTemplate</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\mariu\Desktop\Universitate\SDL\SDL_LIB\SDL2_image-2.0.3\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2_image-2.0.3\include;C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2_image-2.0.3\include;C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\mariu\Desktop\Universitate\SDL_LIB\SDL2-2.0.8\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\lib\x64;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\include;$(SolutionDir)SDL_LIB\SDL2_image-2.0.3\include;$(SolutionDir)\SDL_LIB\SDL2_ttf-2.0.14\include;$(SolutionDir)\SDL_LIB\SDL2-2.0.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\lib\x64;$(SolutionDir)SDL_LIB\SDL2_ttf-2.0.14\lib\x64;$(SolutionDir)SDL_LIB\SDL2_image-2.0.3\lib\x64;$(SolutionDir)SDL_LIB\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\include;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\lib\x64;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\include;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\include;$(SolutionDir)SDL_LIB\SDL2_image-2.0.3\include;$(SolutionDir)\SDL_LIB\SDL2_ttf-2.0.14\include;$(SolutionDir)\SDL_LIB\SDL2-2.0.8\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2-2.0.8\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_ttf-2.0.14\lib\x64;C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_LIB\SDL2_image-2.0.3\lib\x64;$(SolutionDir)SDL_LIB\SDL2_ttf-2.0.14\lib\x64;$(SolutionDir)SDL_LIB\SDL2_image-2.0.3\lib\x64;$(SolutionDir)SDL_LIB\SDL2-2.0.8\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="ColliderComponent.cpp" />
+    <ClCompile Include="Collision.cpp" />
+    <ClCompile Include="ECS.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Vector2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Animation.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="ColliderComponent.h" />
+    <ClInclude Include="Collision.h" />
+    <ClInclude Include="components.h" />
+    <ClInclude Include="ECS.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="KeyboardController.h" />
+    <ClInclude Include="Life.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ProjectileComponent.h" />
+    <ClInclude Include="TileComponent.h" />
+    <ClInclude Include="TransformComponent.h" />
+    <ClInclude Include="SpriteComponent.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="UILabel.h" />
+    <ClInclude Include="Vector2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\dirt.png" />
+    <Image Include="assets\Enemy.png" />
+    <Image Include="assets\grass.png" />
+    <Image Include="assets\Player.png" />
+    <Image Include="assets\water.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

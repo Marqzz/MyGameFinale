@@ -1,0 +1,8 @@
+﻿  Game.cpp
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\TileComponent.h(31,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\TileComponent.h(32,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\Game.cpp(175,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\Game.cpp(176,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\Game.cpp(177,44): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\SDL_GameTemplate\Game.cpp(236,2): warning C4551: function call missing argument list
+  SDL_GameTemplate.vcxproj -> C:\Users\user\Desktop\MyProjects\MyNewGame\SDL_MyNewGame\x64\Debug\SDL_GameTemplate.exe
